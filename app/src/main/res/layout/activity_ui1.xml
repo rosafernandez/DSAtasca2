@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.upc.eetac.dsa.calculadora2.UI1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/textCapçalera"
+        android:id="@+id/textCapçalera"/>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="50dp"
+        android:id="@+id/radiogrup"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSumar"
+            android:text="+"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbRestar"
+            android:text="-"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbMultiplicar"
+            android:text="X"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbDividir"
+            android:text="/"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="150dp"
+        android:background="@color/colorNouNum"
+        android:id="@+id/num1"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textAlignment="textEnd"/>
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:background="@color/colorNouNum"
+        android:id="@+id/num2"
+        android:layout_below="@+id/num1"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/num1"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textAlignment="textEnd"/>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:background="@color/colorResultat"
+        android:id="@+id/resultat"
+        android:textSize="20dp"
+        android:layout_below="@+id/num2"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/num1"
+        android:textAlignment="textEnd"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/colorResultat"
+        android:id="@+id/botoResultat"
+        android:layout_below="@+id/resultat"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="145dp"
+        android:text="RESULTAT"
+        android:onClick="onClickResultat"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/colorResultat"
+        android:id="@+id/botoEsborrar"
+        android:layout_below="@+id/botoResultat"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="145dp"
+        android:text="ESBORRAR"
+        android:onClick="onClickEsborrar"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/colorResultat"
+        android:id="@+id/botoaHistorial"
+        android:layout_below="@+id/botoEsborrar"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="145dp"
+        android:text="Historial"
+        android:onClick="onClickHistorial"
+
+        />
+
+</RelativeLayout>

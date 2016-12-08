@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ui3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.upc.eetac.dsa.calculadora2.UI3">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Vols esborrar tot l'historial?"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textCapçalera3"
+        android:backgroundTint="@color/colorBlau"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="No"
+        android:id="@+id/btnNo"
+        android:textAlignment="center"
+        android:background="@color/colorResultat"
+        android:layout_below="@id/textCapçalera3"
+        android:layout_marginTop="100dp"
+        android:layout_alignStart="@+id/textCapçalera3"
+        android:onClick="onClickNo"/>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="SÍ"
+        android:id="@+id/btnSi"
+        android:textAlignment="center"
+        android:background="@color/colorResultat"
+        android:layout_below="@id/textCapçalera3"
+        android:layout_marginTop="100dp"
+        android:layout_alignRight="@id/textCapçalera3"
+        android:onClick="onClickSi"/>
+
+</RelativeLayout>
